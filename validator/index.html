@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head><title>GA4 Attribution Validator</title></head>
+  <body>
+    <h1>Validator</h1>
+    <button onclick="check()">Check</button>
+    <pre id="result">Click to validate</pre>
+    <script type="module">
+      import { getGA4AttributionData } from '../dist/index.js';
+      window.check = () => {
+        const data = getGA4AttributionData();
+        document.getElementById('result').textContent = JSON.stringify(data, null, 2);
+      };
+    </script>
+  </body>
+</html>

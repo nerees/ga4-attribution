@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head><title>GA4 Attribution Demo</title></head>
+  <body>
+    <h1>GA4 Attribution Data</h1>
+    <pre id="output">Loading...</pre>
+    <script type="module">
+      import { getGA4AttributionData } from '../dist/index.js';
+      document.getElementById('output').textContent =
+        JSON.stringify(getGA4AttributionData(), null, 2);
+    </script>
+  </body>
+</html>

@@ -1,3 +1,3 @@
 # Changelog
 
-All notable changes will be documented here.
+All notable changes to this project will be documented here.
